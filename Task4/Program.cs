@@ -3,7 +3,9 @@ Console.WriteLine("Введите число N: ");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Итак число N равно {num}, вот все четные числа входящие в него: ");
 int count = 1;
-while (count <= num)
+if (num>0)
+{
+    while (count <= num)
 {
     if (count % 2 == 0)
     {
@@ -14,4 +16,20 @@ while (count <= num)
     {
         count++;
     }
+}
+}
+else
+{
+   while (count >= num)
+{
+    if (count % 2 == 0)
+    {
+        Console.Write($"{count}, ");
+        count = count - 1;
+    }
+    else
+    {
+        count = count - 1;
+    }
+} 
 }
