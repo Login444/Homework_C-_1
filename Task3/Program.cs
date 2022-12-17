@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Поробуем определить является ли число четным.");
+Console.WriteLine("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+if (num % 2 == 0)
+{
+    Console.WriteLine($"Число {num} является четным!");
+}
+else
+{
+    Console.WriteLine($"Число {num} является нечетным!");
+}
