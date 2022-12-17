@@ -4,6 +4,7 @@ Console.WriteLine("Введите второе число");
 int num2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите третье число");
 int num3 = Convert.ToInt32(Console.ReadLine());
+int max = num1;
 
 if (num1 > num2)
 {
