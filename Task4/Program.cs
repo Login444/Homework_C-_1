@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Посмотрим на все четные числа входящие в число N");
+Console.WriteLine("Введите число N: ");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Итак число N равно {num}, вот все четные числа входящие в него: ");
+int count = 1;
+while (count <= num)
+{
+    if (count % 2 == 0)
+    {
+        Console.Write($"{count}, ");
+        count++;
+    }
+    else
+    {
+        count++;
+    }
+}
